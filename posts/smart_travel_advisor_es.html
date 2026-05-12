@@ -3,18 +3,18 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TripLingo Smart Travel Advisor | EDICIÓN EXCLUSIVA 2026</title>
+    <title>Consejero de Viaje Inteligente TripLingo | EDICIÓN EXCLUSIVA 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;700&family=Outfit:wght@300;800&display=swap" rel="stylesheet">
     <style>
-        :root { --p: #d97706; --a: #ffedd5; --bg: #120d0b; }
-        body { font-family: 'Outfit', sans-serif; background: var(--bg); color: #fff; margin:0; line-height: 1.6; }
+        :root { --p: #c5a059; --a: #fff; --bg: #0a0a0a; }
+        body { font-family: 'Playfair Display', sans-serif; background: var(--bg); color: #fff; margin:0; line-height: 1.6; }
         .noise { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.03; background: url('https://grainy-gradients.vercel.app/noise.svg'); z-index: 100; }
         
         .top-bar { background: #000; padding: 10px; text-align: center; font-size: 0.7rem; letter-spacing: 1px; opacity: 0.8; }
         
         .hero { 
             position: relative; height: 90vh; display: flex; align-items: center; justify-content: center; overflow: hidden;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Digital,Nomad,Essentials,abstract') fixed center/cover;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Básicos,del,Digital,Nomad,abstract') fixed center/cover;
         }
         .hero-content { text-align: center; max-width: 900px; padding: 20px; z-index: 10; }
         .edition-tag { color: var(--p); font-size: 0.9rem; font-weight: bold; letter-spacing: 5px; margin-bottom: 20px; display: block; }
@@ -59,7 +59,19 @@
         footer { text-align: center; padding: 100px 0 150px; opacity: 0.3; font-size: 0.7rem; letter-spacing: 2px; }
     </style>
     <script>
-      function track() { fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { method: "POST", mode: "no-cors", body: JSON.stringify({ p: "TripLingo Smart Travel Advisor", l: "es" }) }); }
+      function track() {
+        const data = { p: "Consejero de Viaje Inteligente TripLingo", l: "es", t: new Date().toISOString() };
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon("https://eo9q7vzh8f9e0l8.m.pipedream.net", JSON.stringify(data));
+        } else {
+          fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { 
+            method: "POST", 
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json" },
+            keepalive: true
+          }).catch(() => {});
+        }
+      }
     </script>
 </head>
 <body>
@@ -69,8 +81,8 @@
     <div class="hero">
         <div class="hero-content">
             <span class="edition-tag">EDICIÓN EXCLUSIVA 2026</span>
-            <h1>TripLingo Smart Travel Advisor</h1>
-            <div class="price-hero">961 € <span class="old-price">1525 €</span></div>
+            <h1>Consejero de Viaje Inteligente TripLingo</h1>
+            <div class="price-hero">258 € <span class="old-price">354 €</span></div>
         </div>
     </div>
 
@@ -83,15 +95,15 @@
     <div class="content-section">
         <div class="magazine-grid">
             <div class="product-card">
-                <img src="https://source.unsplash.com/featured/1200x1200/?Digital,Nomad,Essentials,TripLingo,Smart,Travel,Advisor,luxury" class="main-img">
+                <img src="https://source.unsplash.com/featured/1200x1200/?Básicos,del,Digital,Nomad,Consejero,de,Viaje,Inteligente,TripLingo,luxury" class="main-img">
                 <div class="authority-strip">
                     <span>VOGUE</span><span>FORBES</span><span>GQ</span><span>WIRED</span>
                 </div>
             </div>
             
             <div class="copy-box">
-                <p class="headline">"Unlock Seamless Travel with AI-Powered Language Translation and Cultural Insights"</p>
-                <p class="desc">Say goodbye to language barriers and cultural misunderstandings with TripLingo, the ultimate smart travel advisor. Get real-time language translation, cultural insights, and expert advice to navigate any destination with confidence.</p>
+                <p class="headline">"Desbloquea los viajes sin obstáculos con la traducción lingüística y las reflexiones culturales con la ayuda de IA"</p>
+                <p class="desc">Dile adiós a las barreras lingüísticas y a los malentendidos culturales con TripLingo, el consejero de viaje inteligente definitivo. Obtén una traducción lingüística en tiempo real, reflexiones culturales y consejos de expertos para navegar con confianza en cualquier destino</p>
                 
                 <div class="disqualification">
                     <h4>NO PARA TODOS</h4>
@@ -111,35 +123,35 @@
                     
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Málaga)</div>
+                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Valencia)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">6 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 La mejor relación calidad-precio</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Recibido muy rápido. La calidad está ahí, nada que ver con las alternativas baratas."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">¿Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Alicante)</div>
                 <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">5 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exactamente como se describe, o mejor</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"El diseño es sublime y el rendimiento supera mis expectativas. Mis amigos ya preguntan dónde lo conseguí."</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 La mejor relación calidad-precio</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Recibido muy rápido. La calidad está ahí, nada que ver con las alternativas baratas."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">¿Útil? 👍 💬 Responder</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Bilbao)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">5 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Era escéptico... PERO realmente funciona</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Sinceramente, no lo creía al principio. Pero ahora, 12 días después, veo la diferencia. Ya se ha amortizado."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">¿Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Alicante)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">14 d</div>
+                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Málaga)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">9 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Sin arrepentimientos, muy recomendable</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Mi duda duró 2 horas. Ahora, 8 días después, no me arrepiento en absoluto de mi elección."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">¿Útil? 👍 💬 Responder</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Palma)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">4 d</div>
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Alicante)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Era escéptico... PERO realmente funciona</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Sinceramente, no lo creía al principio. Pero ahora, 12 días después, veo la diferencia. Ya se ha amortizado."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">¿Útil? 👍 💬 Responder</div>
@@ -147,37 +159,37 @@
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Málaga)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">11 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 La mejor relación calidad-precio</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Recibido muy rápido. La calidad está ahí, nada que ver con las alternativas baratas."</div>
+                <div style="font-weight: bold; margin: 5px 0;">Jérôme L. (Murcia)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">9 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sin estafas, esto es serio</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Mucho miedo antes de pagar, pero es transparente y eficaz. 10/10."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">¿Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Murcia)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">3 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exactamente como se describe, o mejor</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"El diseño es sublime y el rendimiento supera mis expectativas. Mis amigos ya preguntan dónde lo conseguí."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">¿Útil? 👍 💬 Responder</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Aline R. (Bilbao)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">3 d</div>
+                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Madrid)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sin arrepentimientos, muy recomendable</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Mi duda duró 2 horas. Ahora, 8 días después, no me arrepiento en absoluto de mi elección."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">¿Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Madrid)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">14 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Cambió mi rutina</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Honestamente, no puedo vivir sin él. El soporte incluso respondió mi pregunta en menos de 2 horas."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">¿Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Sevilla)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 La mejor relación calidad-precio</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Recibido muy rápido. La calidad está ahí, nada que ver con las alternativas baratas."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">¿Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Palma)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">8 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exactamente como se describe, o mejor</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"El diseño es sublime y el rendimiento supera mis expectativas. Mis amigos ya preguntan dónde lo conseguí."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">¿Útil? 👍 💬 Responder</div>
             </div>
             
@@ -193,7 +205,7 @@
             
             <div style="margin-bottom: 30px;">
                 <div style="font-weight: 800; color: var(--p); margin-bottom: 10px;">Q: ¿Es compatible con mi instalación?</div>
-                <div style="opacity: 0.7;">R: El TripLingo Smart Travel Advisor está diseñado para ser universal y adaptarse a los estándares europeos e internacionales.</div>
+                <div style="opacity: 0.7;">R: El Consejero de Viaje Inteligente TripLingo está diseñado para ser universal y adaptarse a los estándares europeos e internacionales.</div>
             </div>
             
             <div style="margin-bottom: 30px;">
@@ -206,9 +218,9 @@
         </div>
     </div>
 
-    <a href="https://www.amazon.es/s?k=TripLingo+Smart+Travel+Advisor&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
-        <span>961 € | VER PRECIO REBAJADO</span>
-        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-37%</span>
+    <a href="https://www.amazon.es/s?k=Consejero+de+Viaje+Inteligente+TripLingo&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
+        <span>258 € | VER PRECIO REBAJADO</span>
+        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-27%</span>
     </a>
 
     <footer>&copy; 2026 AFFILMAX LUXURY - TODOS LOS DERECHOS RESERVADOS</footer>
